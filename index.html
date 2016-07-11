@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mobile First</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <div class="header text-center">
+        Transit App
+    </div>
+    <div class="container">
+
+      <!-- <div class="col-md-6"> -->
+        <div class="form-inline">
+          <div class="form-group">
+              <label class="sr-only" for="from">From</label>
+              <input type="text" class="col-md-6 form-control" placeholder="From Station">
+          </div>
+          <div class="form-group">
+              <label class="sr-only" for="to">To</label>
+              <input type="text" class="col-md-6 form-control" placeholder="To Station">
+          </div>
+          <button type="submit" class="btn btn-lg btn-block btn-primary">Find</button>
+        </div>
+      <!-- </div> -->
+    </div>
+
+          <!-- List of busses -->
+
+    <div class="container">
+
+      <div class="panel panel-success">
+        <div class="panel-heading">A -> B <span class="text-right">On time</span></div>
+        <ul class="list-group">
+            <li class="list-group-item">Line#:</li>
+            <li class="list-group-item">Train:</li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xs-6">
+                  <span>Arriv time: </span>
+                </div>
+                <div class="col-xs-6">
+                  <span>Dept time: </span>
+                </div>
+              </div>
+            </li>
+        </ul>
+      </div>
+
+
+
+      <div class="panel panel-danger">
+        <div class="panel-heading">A -> B <span class="text-right">Late</span></div>
+        <ul class="list-group">
+            <li class="list-group-item">Line#:</li>
+            <li class="list-group-item">Train:</li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-xs-6">
+                  <span>Arriv time: </span>
+                </div>
+                <div class="col-xs-6">
+                  <span>Dept time: </span>
+                </div>
+              </div>
+            </li>
+        </ul>
+      </div>
+
+    </div>
+  </body>
+</html>
+
+
+<!-- TODO:  -->
+<!-- Add class base on time (on time/ late) -->
