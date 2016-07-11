@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Mobile First</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -34,7 +35,8 @@
           <!-- List of busses -->
 
     <div class="container">
-
+    <div class="row">
+    <div class="col-md-6">
       <div class="panel panel-success">
         <div class="panel-heading">A -> B <span class="text-right">On time</span></div>
         <ul class="list-group">
@@ -52,28 +54,32 @@
             </li>
         </ul>
       </div>
+    </div>
 
 
 
-      <div class="panel panel-danger">
-        <div class="panel-heading">A -> B <span class="text-right">Late</span></div>
-        <ul class="list-group">
-            <li class="list-group-item">Line#:</li>
-            <li class="list-group-item">Train:</li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-xs-6">
-                  <span>Arriv time: </span>
+      <div class="col-md-6">
+        <div class="panel panel-danger">
+          <div class="panel-heading">A -> B <span class="text-right">Late</span></div>
+          <ul class="list-group">
+              <li class="list-group-item">Line#:</li>
+              <li class="list-group-item">Train:</li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <span>Arriv time: </span>
+                  </div>
+                  <div class="col-xs-6">
+                    <span>Dept time: </span>
+                  </div>
                 </div>
-                <div class="col-xs-6">
-                  <span>Dept time: </span>
-                </div>
-              </div>
-            </li>
-        </ul>
+              </li>
+          </ul>
+        </div>
       </div>
 
     </div>
+  </div>
   </body>
 </html>
 
